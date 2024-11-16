@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Pro</title>
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div id="site-name">Tic Tac Pro</div>
+    <div id="creator">
+      THIS SITE IS CREATED BY 
+      <a href="https://github.com/vxnuprasad" target="_blank" title="Visit GitHub">
+        <i class='bx bxl-github' id="github-icon"></i>
+      </a>
+    </div>
+  </header>
+  <main>
+    <h1>Tic-Tac-Toe</h1>
+    <div id="player-info">
+      <input type="text" id="player-x" placeholder="Enter Player X Name">
+      <input type="text" id="player-o" placeholder="Enter Player O Name">
+      <button id="start-button">Start Game</button>
+      <p id="error-message" style="color: red; display: none;">Please enter both player names!</p>
+    </div>
+    <div id="scores" style="display: none;">
+      <p>Round: <span id="round-number">1</span></p>
+      <p>
+        <span id="player-x-score">0</span> - <span id="player-o-score">0</span>
+      </p>
+    </div>
+    <div id="game-board" style="display: none;">
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+    </div>
+    <div id="game-status" style="display: none;">
+      <p id="winner-message"></p>
+      <button id="new-match-button" style="display: none;">New Match</button>
+      <button id="next-match-button" style="display: none;">Next Match</button>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

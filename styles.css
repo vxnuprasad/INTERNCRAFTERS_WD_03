@@ -1,0 +1,174 @@
+/* General Styles */
+body {
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #ff7043, #007bff); /* Orange and Blue gradient */
+  color: #fff;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 20px;
+  text-shadow: 2px 2px #333;
+  color: #ffffff;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #e65100, #ff6f00); /* Darker orange gradient */
+  padding: 15px 20px;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Professional shadow */
+  border-bottom: 2px solid #ffab40;
+}
+
+#site-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #ffcc80; /* Softer orange for text */
+}
+
+#creator {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  color: #ffcc80;
+}
+
+#github-icon {
+  font-size: 24px;
+  margin-left: 8px;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+#github-icon:hover {
+  color: #ffcc80;
+}
+
+
+/* Game Section */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  gap: 20px;
+}
+
+#player-info input {
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+}
+
+#start-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#start-button:hover {
+  background-color: #0056b3;
+}
+
+/* Scores */
+#scores {
+  text-align: center;
+  padding: 10px;
+  border: 2px solid #ff7043;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: fit-content;
+}
+
+#scores p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+/* Game Board */
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: #333;
+  font-size: 2rem;
+  cursor: pointer;
+  border: 2px solid #ff7043;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cell.taken {
+  pointer-events: none;
+}
+
+/* Restart Options */
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#new-match-button {
+  background-color: #ff7043;
+  color: #fff;
+}
+
+#new-match-button:hover {
+  background-color: #ff5722;
+}
+
+#next-match-button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+#next-match-button:hover {
+  background-color: #0056b3;
+}
+
+/* Error Message */
+#error-message {
+  font-size: 1rem;
+  color: #ffcccb;
+  margin-top: 10px;
+}
+
+/* Highlight winning cells */
+.cell.winning {
+  background-color: #ffcc00; /* Gold for highlight */
+  color: #000; /* Black text for contrast */
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(255, 204, 0, 0.7);
+}
